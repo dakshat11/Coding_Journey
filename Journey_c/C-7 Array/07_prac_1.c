@@ -1,0 +1,16 @@
+#include<stdio.h>
+ 
+int main()
+{
+    int arr[10];
+    int *ptr = &arr[0];
+    ptr = ptr+2;
+    if (ptr==&arr[2])
+    {
+       printf("These pint to the same location in the memory\n");
+    }
+    else{
+        printf("These do not point to the same location in the memory.\n");
+    }
+return 0;
+}
